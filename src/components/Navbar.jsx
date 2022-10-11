@@ -15,8 +15,8 @@ const Navbar = () => {
   return (
     <nav>
       <div className="container nav__container">
-        <Link to="/home" className="logo">
-          <img src={Logo} alt="Nav logo" />
+        <Link to="/" className="logo">
+          <img src={Logo} alt="Nav logo" onClick = {() => setIsNavShowing(false)} />
         </Link>
         <ul
           className={`nav__links ${isNavShowing ? "show__nav" : "hide__nav"}`}
@@ -27,6 +27,7 @@ const Navbar = () => {
                 <NavLink
                   to={path}
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
+                  onClick = {() => setIsNavShowing(prevState => !prevState)}
                 >
                   {name}
                 </NavLink>
