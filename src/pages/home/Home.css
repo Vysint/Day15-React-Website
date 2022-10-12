@@ -239,3 +239,52 @@ footer{
     border-top: 2px solid var(--color-primary-variant);
     margin-top: 5rem;
 }
+
+
+
+/* --------MEDIA QUERIES (MEDIUM SCREENS)----- */
+@media screen and (max-width: 1024px){
+    /* MAIN HEADER */
+    .main__header{
+        height: fit-content;
+        padding: 12rem 0;
+    }
+    .main__header-container{
+        gap: 0;
+    }
+    .main__header-circle{
+        width: 16rem;
+        height: 16rem;
+    }
+
+    /* PROGRAMS */
+    .programs__wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    /* VALUES */
+    .values__container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap:4rem;
+    }
+    .values__wrapper{
+        gap: 4rem 3rem;
+    }
+    .values__image{
+        display: none;
+    }
+    /* FAQS */
+    .faqs__wrapper{
+        grid-template-columns: 1fr;
+    }
+    /* TESTIMONIALS */
+    .testimonials{
+        width: 75%;
+    }
+    /* FOOTER */
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+}
