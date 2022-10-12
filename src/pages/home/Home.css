@@ -288,3 +288,65 @@ footer{
     }
 
 }
+
+/* MEDIA QUERIES (mobile phones) */
+@media screen and (max-width: 600px){
+    /* MAIN-HEADER */
+    .main__header{
+        margin-top: 0;
+        padding: 12rem 0 0 ;
+        height: 100vh;
+    }
+    .main__header-image, .main__header-circle{
+        display: none;
+    }
+    .main__header-container{
+        grid-template-columns: 1fr;
+    }
+    .main__header-left h1{
+        line-height: 1.2;
+        text-align: center;
+    }
+    /* PROGRAMS */
+    .programs__wrapper{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .programs__program{
+        width: 84%;
+        margin: 0 auto;
+    }
+    /* VALUES */
+    .values__wrapper{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .card.values__value{
+        width: 84%;
+        margin: 0 auto;
+    }
+    /* FAQS */
+    .faqs__wrapper{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    /* TESTIMONIALS */
+    .testimonials{
+        width: 100%;
+    }
+    /* FOOTER */
+    footer{
+        margin-top: 7rem;
+    }
+    .footer__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .footer__container article{
+        align-items: center;
+    }
+    .footer__container article p{
+        text-align: center;
+    }
+}
